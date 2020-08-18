@@ -1,0 +1,13 @@
+---
+global_commands:
+  - hostname
+  - logging host
+interface_commands:
+  - switchport mode access
+  - switchport access vlan
+uplink_interface_commands:
+  - switchport nonegotiate
+  - ip dhcp snooping trust
+interface_exclude:
+  - Gigabitethernet0/0
+  - Loop10
